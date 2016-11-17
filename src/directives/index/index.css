@@ -1,0 +1,14 @@
+html,
+body {
+    height: 100%;
+}
+
+* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.index {
+    position: relative;
+    min-height: 100%;
+}
