@@ -3,6 +3,7 @@ import tmpl from "./cars.html"; // for browserify-ng-html2js
 import css from "./cars.css"; // for browserify-css
 import poller from "angular-poller"; // dependenciy poller
 import settings from "../../../settings";
+import car from "./car/car";
 
 const CHECK_INTERVAL = 1000;
 
@@ -28,8 +29,9 @@ class Cars {
 }
 
 export default {
-    dependencies: ["emguo.poller"].concat(),
+    dependencies: ["emguo.poller"].concat(car.dependencies),
     registerComponent: function (moduleName) {
+        car.registerComponent(moduleName);
         angular.module(moduleName)
             .component("cars", {
                 templateUrl: "cars.html",

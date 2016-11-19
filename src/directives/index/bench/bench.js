@@ -5,7 +5,7 @@ import poller from "angular-poller"; // dependenciy poller
 import settings from "../../../settings";
 import client from "../client/client";
 
-const CHECK_INTERVAL = 400;
+const CHECK_INTERVAL = 1000;
 
 class Bench {
     constructor(poller, $scope) {

@@ -1,0 +1,40 @@
+.car {
+    width: 664px;
+    height: 215px;
+    margin-left: 40px;
+    position: relative;
+}
+
+.car__clients-placeholder {
+    padding-top: 45px;
+    padding-left: 250px;
+}
+
+.car__client {
+    display: inline-block;
+    margin: 5px;
+}
+
+.car__place {
+    position: absolute;
+    padding: 0 5px 0 5px;
+    left: 10px;
+    top: 5px;
+    background: #c0c0c0;
+    border: solid 2px grey;
+    border-radius: 10px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.car__time {
+    position: absolute;
+    padding: 0 5px 0 5px;
+    right: 10px;
+    top: 5px;
+    background: #c0c0c0;
+    border: solid 2px grey;
+    border-radius: 10px;
+    text-align: center;
+    font-size: xx-large;
+}

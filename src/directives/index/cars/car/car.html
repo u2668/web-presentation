@@ -1,0 +1,9 @@
+<div class="car" style="background-image: url(images/car.png)">
+    <div class="car__place">{{$ctrl.place}}</div>
+    <div class="car__time">{{$ctrl.time}}</div>
+    <div class="car__clients-placeholder">
+        <div ng-repeat="passenger in $ctrl.passengers" class="car__client">
+            <client client-name="{{passenger}}"></client>
+        </div>
+    </div>
+</div>
