@@ -3,7 +3,7 @@ import tmpl from "./bench.html"; // for browserify-ng-html2js
 import css from "./bench.css"; // for browserify-css
 import poller from "angular-poller"; // dependenciy poller
 import settings from "../../../settings";
-import client from "./client/client";
+import client from "../client/client";
 
 const CHECK_INTERVAL = 400;
 
