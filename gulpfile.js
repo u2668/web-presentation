@@ -24,6 +24,11 @@ gulp.task('copy-html', ['clean-html'], () =>
         .pipe(gulp.dest(paths.dest))
 );
 
+gulp.task('copy-img', () =>
+    gulp.src(paths.src + '/../images/**')
+        .pipe(gulp.dest(paths.dest + "/images"))
+);
+
 gulp.task('watch-html', () => gulp.watch([paths.src+ '/index.html'], ['copy-html']));
 //</editor-fold>
 
@@ -39,4 +44,4 @@ gulp.task('make-app-bundle', ['clean-js'], () => makeBundle("PROD"));
 gulp.task('watch-js', watchJs);
 
 gulp.task('watch', ['watch-js', 'watch-html']);
-gulp.task('build', ['copy-html', 'check-js', 'make-app-bundle']);
+gulp.task('build', ['copy-html', 'copy-img', 'check-js', 'make-app-bundle']);

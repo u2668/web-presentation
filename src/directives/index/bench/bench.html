@@ -1,1 +1,7 @@
-<div class="bench">{{$ctrl.number}}</div>
+<div class="bench" style="background-image: url(images/bus-stop.jpg)">
+    <div class="bench__clients-placeholder">
+        <div ng-repeat="client in $ctrl.clients" class="bench__client">
+            <client client-name="{{client}}"></client>
+        </div>
+    </div>
+</div>

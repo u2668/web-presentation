@@ -1,5 +1,14 @@
 .bench {
-    background: red;
-    text-align: center;
-    font-size: xx-large;
+    width: 800px;
+    height: 406px;
+}
+
+.bench__clients-placeholder {
+    padding-top: 140px;
+    padding-left: 120px;
+}
+
+.bench__client {
+    display: inline-block;
+    margin: 15px;
 }
