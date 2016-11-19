@@ -4,6 +4,7 @@ import css from "./bench.css"; // for browserify-css
 import poller from "angular-poller"; // dependenciy poller
 import settings from "../../../settings";
 import client from "../client/client";
+import _ from "lodash";
 
 const CHECK_INTERVAL = 1000;
 
@@ -22,7 +23,7 @@ class Bench {
             smart: true
         });
         scorePoller.promise.then(null, null, response => {
-            this.clients = response.data;
+            this.clients = _.uniq(response.data);
         });
         return scorePoller;
     }

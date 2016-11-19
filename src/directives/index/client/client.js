@@ -7,7 +7,7 @@ class Client {
     constructor() {
         this.picUrl = "";
         switch (this.clientName) {
-            case "Yurij Rumyancev": {
+            case "Lynx Linux": {
                 this.picUrl = "images/faces/yrumyancev.png";
                 break;
             }
