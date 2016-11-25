@@ -1,3 +1,3 @@
 export default {
-    backend: "http://46.101.204.43:1331"
+    backend: "http://backend:8080"
 };
