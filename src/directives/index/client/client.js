@@ -11,6 +11,10 @@ class Client {
                 this.picUrl = "images/faces/yrumyancev.png";
                 break;
             }
+            case "Yurij Rumyancev": {
+                this.picUrl = "images/faces/yrumyancev.png";
+                break;
+            }
             case "Aleksandr Aleksandrov": {
                 this.picUrl = "images/faces/aalexandrov.png";
                 break;
