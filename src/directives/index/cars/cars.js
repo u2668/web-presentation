@@ -16,7 +16,7 @@ class Cars {
     }
 
     _startPolling() {
-        let scorePoller = this.poller.get(`${settings.backend}/cars`, {
+        let scorePoller = this.poller.get("cars", {
             action: "get",
             delay: CHECK_INTERVAL,
             smart: true

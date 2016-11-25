@@ -17,7 +17,7 @@ class Bench {
     }
 
     _startPolling() {
-        let scorePoller = this.poller.get(`${settings.backend}/bench`, {
+        let scorePoller = this.poller.get("bench", {
             action: "get",
             delay: CHECK_INTERVAL,
             smart: true
